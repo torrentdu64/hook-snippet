@@ -3,12 +3,12 @@ import ResourceList from './ResourceList';
 
 export  const App = () =>  {
 
- const [ resource , setResource ] = useState('post');
+ const [ resource , setResource ] = useState('posts');
     return (
       <div className="ui container">
         <div>
-          <button onClick={() => setResource('post')}>Post</button>
-           <button onClick={() => setResource('todo')}>ToDO</button>
+          <button onClick={() => setResource('posts')}>Post</button>
+           <button onClick={() => setResource('todos')}>ToDO</button>
         </div>
         <ResourceList resource={resource} />
       </div>
